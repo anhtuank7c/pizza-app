@@ -1,6 +1,7 @@
 import React, { FC } from "react"
 import { View, ViewStyle, TextStyle, ImageStyle, SafeAreaView } from "react-native"
 import { StackScreenProps } from "@react-navigation/stack"
+import { StackActions } from "@react-navigation/native"
 import { observer } from "mobx-react-lite"
 import {
   Button,
@@ -90,6 +91,10 @@ export const WelcomeScreen: FC<StackScreenProps<NavigatorParamList, "welcome">> 
   ({ navigation }) => {
     const nextScreen = () => navigation.navigate("demo")
 
+    const gotoIntro = () => {
+      navigation.dispatch(StackActions.replace("intro"))
+    }
+
     return (
       <View testID="WelcomeScreen" style={FULL}>
         <GradientBackground colors={["#422443", "#281b34"]} />
@@ -110,6 +115,13 @@ export const WelcomeScreen: FC<StackScreenProps<NavigatorParamList, "welcome">> 
             For everyone else, this is where you'll see a live preview of your fully functioning app
             using Ignite.
           </Text>
+          <Button
+            testID="next-screen-button"
+            style={CONTINUE}
+            textStyle={CONTINUE_TEXT}
+            text="Goto Intro"
+            onPress={gotoIntro}
+          />
         </Screen>
         <SafeAreaView style={FOOTER}>
           <View style={FOOTER_CONTENT}>
