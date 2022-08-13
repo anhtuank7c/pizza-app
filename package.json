@@ -85,6 +85,7 @@
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "6.0.0",
     "eslint-plugin-react": "7.30.0",
+    "eslint-plugin-react-hooks": "4.6.0",
     "eslint-plugin-react-native": "4.0.0",
     "expo-modules-autolinking": "^0.8.1",
     "fbjs-scripts": "3.0.1",
@@ -158,7 +159,8 @@
     "plugins": [
       "@typescript-eslint",
       "react",
-      "react-native"
+      "react-native",
+      "react-hooks"
     ],
     "parserOptions": {
       "ecmaFeatures": {
@@ -206,7 +208,9 @@
       "react-native/no-raw-text": 0,
       "react/no-unescaped-entities": 0,
       "react/prop-types": "off",
-      "space-before-function-paren": 0
+      "space-before-function-paren": 0,
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn"
     }
   }
 }
