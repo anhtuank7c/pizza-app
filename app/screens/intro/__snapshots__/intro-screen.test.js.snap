@@ -1,0 +1,398 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`intro-screen render correctly 1`] = `
+<View
+  accessibilityIgnoresInvertColors={true}
+  style={
+    Object {
+      "flex": 1,
+      "justifyContent": "flex-end",
+      "width": null,
+    }
+  }
+>
+  <Image
+    source={1}
+    style={
+      Array [
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        Object {
+          "height": undefined,
+          "width": null,
+        },
+        undefined,
+      ]
+    }
+  />
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <RCTImageView
+      internal_analyticTag={null}
+      resizeMode="cover"
+      source={
+        Array [
+          Object {
+            "height": undefined,
+            "uri": undefined,
+            "width": undefined,
+          },
+        ]
+      }
+      style={
+        Object {
+          "alignSelf": "center",
+          "bottom": -20,
+          "height": 750,
+          "overflow": "hidden",
+          "position": "absolute",
+          "width": 525,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignSelf": "center",
+          "backgroundColor": "#ffffff",
+          "borderRadius": 1334,
+          "height": 2668,
+          "marginTop": 800.4,
+          "width": 2668,
+        }
+      }
+    />
+  </View>
+  <RCTSafeAreaView
+    emulateUnlessSupported={true}
+    style={
+      Object {
+        "height": 533.6,
+        "justifyContent": "flex-end",
+        "width": 750,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "overflow": "hidden",
+          },
+          Object {
+            "height": 334,
+            "width": 750,
+          },
+          Object {},
+        ]
+      }
+      testID="intro-slide"
+    >
+      <View
+        onTouchEnd={[Function]}
+        onTouchStart={[Function]}
+        style={
+          Array [
+            Object {
+              "flex": 1,
+              "overflow": "hidden",
+            },
+            Object {
+              "flexDirection": "column",
+            },
+            Object {
+              "height": "100%",
+              "width": "100%",
+            },
+          ]
+        }
+      >
+        <View
+          collapsable={false}
+          handlerTag={1}
+          handlerType="PanGestureHandler"
+          onGestureHandlerEvent={[Function]}
+          onGestureHandlerStateChange={[Function]}
+          style={
+            Array [
+              Object {
+                "overflow": "hidden",
+              },
+              Object {
+                "height": 334,
+                "width": 750,
+              },
+              Object {},
+              Object {
+                "flexDirection": "row",
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "height": 334,
+                  "position": "absolute",
+                  "width": 750,
+                },
+                Object {
+                  "transform": Array [
+                    Object {
+                      "translateX": undefined,
+                    },
+                  ],
+                },
+              ]
+            }
+          />
+          <View
+            style={
+              Array [
+                Object {
+                  "height": 334,
+                  "position": "absolute",
+                  "width": 750,
+                },
+                Object {
+                  "transform": Array [
+                    Object {
+                      "translateX": undefined,
+                    },
+                  ],
+                },
+              ]
+            }
+          />
+          <View
+            style={
+              Array [
+                Object {
+                  "height": 334,
+                  "position": "absolute",
+                  "width": 750,
+                },
+                Object {
+                  "transform": Array [
+                    Object {
+                      "translateX": undefined,
+                    },
+                  ],
+                },
+              ]
+            }
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignSelf": "center",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "marginBottom": 16,
+          },
+          Object {
+            "width": 30,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "borderRadius": 50,
+              "marginRight": 6,
+              "overflow": "hidden",
+            },
+            Object {
+              "backgroundColor": "#CDD4DA",
+              "height": 10,
+              "transform": Array [
+                Object {
+                  "rotateZ": "0deg",
+                },
+              ],
+              "width": 10,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#FBA928",
+                "borderRadius": 50,
+                "flex": 1,
+              },
+              Object {
+                "backgroundColor": "#FBA928",
+              },
+              Object {
+                "transform": Array [
+                  Object {
+                    "translateX": undefined,
+                  },
+                ],
+              },
+            ]
+          }
+        />
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "borderRadius": 50,
+              "marginRight": 6,
+              "overflow": "hidden",
+            },
+            Object {
+              "backgroundColor": "#CDD4DA",
+              "height": 10,
+              "transform": Array [
+                Object {
+                  "rotateZ": "0deg",
+                },
+              ],
+              "width": 10,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#FBA928",
+                "borderRadius": 50,
+                "flex": 1,
+              },
+              Object {
+                "backgroundColor": "#FBA928",
+              },
+              Object {
+                "transform": Array [
+                  Object {
+                    "translateX": undefined,
+                  },
+                ],
+              },
+            ]
+          }
+        />
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "borderRadius": 50,
+              "marginRight": 6,
+              "overflow": "hidden",
+            },
+            Object {
+              "backgroundColor": "#CDD4DA",
+              "height": 10,
+              "transform": Array [
+                Object {
+                  "rotateZ": "0deg",
+                },
+              ],
+              "width": 10,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#FBA928",
+                "borderRadius": 50,
+                "flex": 1,
+              },
+              Object {
+                "backgroundColor": "#FBA928",
+              },
+              Object {
+                "transform": Array [
+                  Object {
+                    "translateX": undefined,
+                  },
+                ],
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#dd3333",
+          "borderRadius": 32,
+          "justifyContent": "center",
+          "marginBottom": 32,
+          "marginHorizontal": 64,
+          "opacity": 1,
+          "paddingHorizontal": 16,
+          "paddingVertical": 16,
+        }
+      }
+      testID="get-started-button"
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#1d1d1d",
+              "fontFamily": "Helvetica",
+              "fontSize": 15,
+            },
+            Array [
+              Object {
+                "color": "#ffffff",
+                "fontSize": 9,
+                "paddingHorizontal": 12,
+              },
+              Object {
+                "fontSize": 17,
+                "fontWeight": "400",
+                "letterSpacing": 2,
+              },
+            ],
+          ]
+        }
+      >
+        intro.getStarted.test
+      </Text>
+    </View>
+  </RCTSafeAreaView>
+</View>
+`;
