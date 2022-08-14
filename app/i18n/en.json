@@ -36,5 +36,14 @@
   "storybook": {
     "placeholder": "Placeholder",
     "field": "Field"
+  },
+  "intro": {
+    "getStarted": "Get Started",
+    "slideFirstTitle": "The Fastest In Delivery Food",
+    "slideFirstDesc": "Our jobs is to filling your tummy with delicious food and fast delivery",
+    "slideSecondTitle": "We have the best Pizza",
+    "slideSecondDesc": "You don't have to remember other brands 'cause we serve the best",
+    "slideThirdTitle": "Time to forget the pay check",
+    "slideThirdDesc": "Tons of coupons waiting for you, free to redeem anywhere."
   }
 }
