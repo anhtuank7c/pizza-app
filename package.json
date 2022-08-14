@@ -107,6 +107,7 @@
     "react-dom": "^17.0.2",
     "react-native-clean-project": "^4.0.1",
     "react-native-web": "^0.18.0",
+    "react-test-renderer": "17",
     "reactotron-core-client": "^2.8.10",
     "regenerator-runtime": "^0.13.4",
     "ts-jest": "26",
