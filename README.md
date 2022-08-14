@@ -27,6 +27,13 @@ ignite-project
 │   ├── models
 │   ├── navigators
 │   ├── screens
+│   │   ├── demo
+│   │   │   ├── __snapshot__
+│   │   │   │   ├── demo-screen.test.js.snap
+│   │   │   ├── demo-screen.tsx
+│   │   │   ├── demo-screen.hooks.tsx
+│   │   │   ├── demo-screen.styles.tsx
+│   │   │   ├── demo-screen.test.js
 │   ├── services
 │   ├── theme
 │   ├── app.tsx
