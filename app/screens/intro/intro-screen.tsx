@@ -29,7 +29,7 @@ export const IntroScreen: FC<StackScreenProps<NavigatorParamList, "intro">> = fu
 }) {
   const progressValue = useSharedValue<number>(0)
 
-  const gotoHomeScreen = () => navigation.navigate("welcome")
+  const gotoHomeScreen = () => navigation.navigate("tabbar")
 
   const renderSlide = useCallback(({ item }) => {
     return (
