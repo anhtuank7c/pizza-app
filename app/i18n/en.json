@@ -45,5 +45,11 @@
     "slideSecondDesc": "You don't have to remember other brands 'cause we serve the best",
     "slideThirdTitle": "Time to forget the pay check",
     "slideThirdDesc": "Tons of coupons waiting for you, free to redeem anywhere."
+  },
+  "tabbar": {
+    "home": "Home",
+    "coupons": "Coupons",
+    "shoppingCart": "Cart",
+    "account": "Profile"
   }
 }
