@@ -14,4 +14,13 @@ module.exports = {
   testPathIgnorePatterns: ["<rootDir>/node_modules/", "/e2e", "@react-native"],
   testEnvironment: "jsdom",
   setupFiles: ["<rootDir>/test/setup.ts"],
+  setupFilesAfterEnv: [
+    "@testing-library/jest-native/extend-expect"
+  ],
+  transform: {
+    ".+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$": "jest-transform-stub"
+  },
+  moduleNameMapper: {
+    "^.+.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$": "jest-transform-stub"
+  }
 }
