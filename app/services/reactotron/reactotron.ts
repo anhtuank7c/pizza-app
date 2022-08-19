@@ -1,5 +1,4 @@
 import { Tron } from "./tron"
-import AsyncStorage from "@react-native-async-storage/async-storage"
 import { ArgType } from "reactotron-core-client"
 import { RootStore } from "../../models/root-store/root-store"
 import { onSnapshot } from "mobx-state-tree"
@@ -69,7 +68,7 @@ export class Reactotron {
     // merge the passed in config with some defaults
     this.config = {
       host: "localhost",
-      useAsyncStorage: true,
+      useAsyncStorage: false,
       ...config,
       state: {
         initial: false,
@@ -118,16 +117,6 @@ export class Reactotron {
         name: this.config.name || require("../../../package.json").name,
         host: this.config.host,
       })
-
-      // hookup middleware
-      if (Platform.OS !== "web") {
-        if (this.config.useAsyncStorage) {
-          Tron.setAsyncStorageHandler(AsyncStorage)
-        }
-        Tron.useReactNative({
-          asyncStorage: this.config.useAsyncStorage ? undefined : false,
-        })
-      }
 
       // ignore some chatty `mobx-state-tree` actions
       const RX = /postProcessSnapshot|@APPLY_SNAPSHOT/
