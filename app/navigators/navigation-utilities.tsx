@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect, useRef , useCallback } from "react"
 import { BackHandler } from "react-native"
 import {
   PartialState,
@@ -109,18 +109,18 @@ export function useNavigationPersistence(storage: any, persistenceKey: string) {
     storage.save(persistenceKey, state)
   }
 
-  const restoreState = async () => {
+  const restoreState = useCallback(async () => {
     try {
       const state = await storage.load(persistenceKey)
       if (state) setInitialNavigationState(state)
     } finally {
       setIsRestored(true)
     }
-  }
+  }, [persistenceKey, storage])
 
   useEffect(() => {
     if (!isRestored) restoreState()
-  }, [isRestored])
+  }, [isRestored, restoreState])
 
   return { onNavigationStateChange, restoreState, isRestored, initialNavigationState }
 }
