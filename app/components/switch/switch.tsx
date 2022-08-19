@@ -48,7 +48,7 @@ const THUMB: ViewStyle = {
 const makeAnimatedValue = (switchOn) => new Animated.Value(switchOn ? 1 : 0)
 
 export function Switch(props: SwitchProps) {
-  const {onToggle, value} = props;
+  const { onToggle, value } = props
 
   const [timer] = React.useState<Animated.Value>(makeAnimatedValue(props.value))
   const startAnimation = React.useMemo(
@@ -73,10 +73,7 @@ export function Switch(props: SwitchProps) {
     }
   }, [value, previousValue, startAnimation])
 
-  const handlePress = React.useMemo(
-    () => () => onToggle && onToggle(!value),
-    [onToggle, value],
-  )
+  const handlePress = React.useMemo(() => () => onToggle && onToggle(!value), [onToggle, value])
 
   if (!timer) {
     return null
