@@ -48,6 +48,8 @@ const THUMB: ViewStyle = {
 const makeAnimatedValue = (switchOn) => new Animated.Value(switchOn ? 1 : 0)
 
 export function Switch(props: SwitchProps) {
+  const {onToggle, value} = props;
+
   const [timer] = React.useState<Animated.Value>(makeAnimatedValue(props.value))
   const startAnimation = React.useMemo(
     () => (newValue: boolean) => {
@@ -63,17 +65,17 @@ export function Switch(props: SwitchProps) {
     [timer],
   )
 
-  const [previousValue, setPreviousValue] = React.useState<boolean>(props.value)
+  const [previousValue, setPreviousValue] = React.useState<boolean>(value)
   React.useEffect(() => {
-    if (props.value !== previousValue) {
-      startAnimation(props.value)
-      setPreviousValue(props.value)
+    if (value !== previousValue) {
+      startAnimation(value)
+      setPreviousValue(value)
     }
-  }, [props.value])
+  }, [value, previousValue, startAnimation])
 
   const handlePress = React.useMemo(
-    () => () => props.onToggle && props.onToggle(!props.value),
-    [props.onToggle, props.value],
+    () => () => onToggle && onToggle(!value),
+    [onToggle, value],
   )
 
   if (!timer) {
