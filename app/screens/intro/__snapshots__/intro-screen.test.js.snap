@@ -12,7 +12,11 @@ exports[`intro-screen render correctly 1`] = `
   }
 >
   <Image
-    source={1}
+    source={
+      Object {
+        "process": [Function],
+      }
+    }
     style={
       Array [
         Object {
@@ -43,9 +47,7 @@ exports[`intro-screen render correctly 1`] = `
       source={
         Array [
           Object {
-            "height": undefined,
-            "uri": undefined,
-            "width": undefined,
+            "process": [Function],
           },
         ]
       }
