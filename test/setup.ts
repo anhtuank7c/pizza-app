@@ -7,6 +7,7 @@ import "./mock-async-storage"
 import "./mock-i18n"
 import "./mock-reactotron"
 import "./mock-react-native-reanimated"
+import "./mock-react-navigation"
 
 jest.useFakeTimers()
 declare global {
